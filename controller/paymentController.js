@@ -15,6 +15,7 @@ const bkash_headers = async () => {
 const payment_create = async (req, res) => {
 
   const { amount, userId } = req.body;
+  
   globals.set('userId', userId);
 
   try {
